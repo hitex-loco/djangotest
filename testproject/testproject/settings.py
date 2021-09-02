@@ -83,15 +83,12 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'sql_server.pyodbc',
+        'ENGINE': 'sqlserver_ado',
         'HOST': '127.0.0.1',
         'PORT': '1433',
         'NAME': 'heroes',
         'USER': 'sa',
         'PASSWORD': 'iafac@123',
-        'OPTIONS': {
-            'driver': 'FreeTDS',
-        },
     },
 }
 
