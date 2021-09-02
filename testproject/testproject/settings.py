@@ -90,7 +90,7 @@ DATABASES = {
         'USER': 'sa',
         'PASSWORD': 'iafac@123',
         'OPTIONS': {
-            'driver': 'freetds',
+            'driver': 'FreeTDS',
         },
     },
 }
