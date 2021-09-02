@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'sql_server.pyodbc',
-        'HOST': '127.0.0.1',
+        'HOST': '192.168.1.3',
         'PORT': '1433',
         'NAME': 'heroes',
         'USER': 'sa',
