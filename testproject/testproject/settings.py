@@ -73,13 +73,27 @@ WSGI_APPLICATION = 'testproject.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.0/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
+        'ENGINE': 'sql_server.pyodbc',
+        'HOST': '127.0.0.1',
+        'PORT': '1433',
+        'NAME': 'heroes',
+        'USER': 'sa',
+        'PASSWORD': 'iafac@123',
+        'OPTIONS': {
+            'driver': 'freetds',
+        },
+    },
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
