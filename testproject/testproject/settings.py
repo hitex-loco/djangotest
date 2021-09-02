@@ -90,7 +90,7 @@ DATABASES = {
         'USER': 'sa',
         'PASSWORD': 'iafac@123',
         'OPTIONS': {
-            'driver': 'FreeTDS',
+            'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
 }
